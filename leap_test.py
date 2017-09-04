@@ -2,7 +2,6 @@ import os, sys, inspect, thread, time
 sys.path.append("C:/Users/Ramanuja/Documents/python/leap/LeapSDK/lib")
 sys.path.append("C:/Users/Ramanuja/Documents/python/leap/LeapSDK/lib/x86")
 sys.path.append("C:/Users/Ramanuja/Documents/python/leap/LeapSDK/lib/Leap.py")
-
 src_dir = os.path.dirname(inspect.getfile(inspect.currentframe()))
 arch_dir = '../lib/x64' if sys.maxsize > 2**32 else '../lib/x86'
 sys.path.insert(0, os.path.abspath(os.path.join(src_dir, arch_dir)))
